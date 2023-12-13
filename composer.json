@@ -1,50 +1,54 @@
 {
-    "name": "clouding/presto-client-php",
-    "description": "Presto client library for PHP.",
-    "keywords": ["presto", "http", "library"],
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Clouding",
-            "email": "ghost0436@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.2",
-        "ext-json": "*",
-        "guzzlehttp/guzzle": "~6.3"
-    },
-    "require-dev": {
-        "blastcloud/guzzler": "^1.0",
-        "mockery/mockery": "^1.2",
-        "phpstan/phpstan": "^0.11.2",
-        "phpstan/phpstan-mockery": "^0.11.0",
-        "phpunit/phpunit": "^8.0",
-        "squizlabs/php_codesniffer": "^3.4",
-        "symfony/var-dumper": "^4.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Clouding\\Presto\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Clouding\\Presto\\Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "scripts": {
-        "test": [
-            "@phpunit",
-            "@phpcs",
-            "@phpstan"
-        ],
-        "phpunit": "phpunit --verbose",
-        "phpcs": "phpcs -p",
-        "phpstan": "phpstan analyse --configuration phpstan.neon --level 2 src tests --ansi"
+  "name": "clouding/presto-client-php",
+  "description": "Presto client library for PHP.",
+  "keywords": [
+    "presto",
+    "http",
+    "library"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clouding",
+      "email": "ghost0436@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "~7.4"
+  },
+  "require-dev": {
+    "blastcloud/guzzler": "^1.0",
+    "mockery/mockery": "^1.2",
+    "phpstan/phpstan": "^0.11.2",
+    "phpstan/phpstan-mockery": "^0.11.0",
+    "phpunit/phpunit": "^8.0",
+    "squizlabs/php_codesniffer": "^3.4",
+    "symfony/var-dumper": "^4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clouding\\Presto\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Clouding\\Presto\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": [
+      "@phpunit",
+      "@phpcs",
+      "@phpstan"
+    ],
+    "phpunit": "phpunit --verbose",
+    "phpcs": "phpcs -p",
+    "phpstan": "phpstan analyse --configuration phpstan.neon --level 2 src tests --ansi"
+  }
 }
